@@ -84,7 +84,7 @@ else:
     first_x_name = x_names[0]
 
     
-    plt.scatter(y_vals, predictions, color="#10b981", edgecolor="#065f46", linewidth=1, s=50, alpha=0.85)
+    plt.scatter(y_vals, predictions, color="#1b10b9", edgecolor="#12065f", linewidth=1, s=50, alpha=0.85)
     min_val = min(float(np.min(y_vals)), float(np.min(predictions)))
     max_val = max(float(np.max(y_vals)), float(np.max(predictions)))
     plt.plot([min_val, max_val], [min_val, max_val], color="#64748b", linestyle="-.", linewidth=1.5)
@@ -96,7 +96,7 @@ else:
 
     metrics_names = ["R2 Score", "RMSE", "MAE", "MSE"]
     metrics_vals = [r2, rmse, mae, mse]
-    colors = ["#4f46e5", "#3b82f6", "#60a5fa", "#93c5fd"]
+    colors = ["#ea580c", "#f97316", "#fb923c", "#fdba74"]
     bars = plt.barh(metrics_names, metrics_vals, color=colors)
     for bar in bars:
         width = bar.get_width()
